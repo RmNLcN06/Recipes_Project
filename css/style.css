@@ -26,6 +26,13 @@
   grid-area: main;
   border: 1px solid purple;
 }
+.container .wrapper__main--section {
+  background-color: lightcoral;
+}
+.container .wrapper__main--section--card--img {
+  width: 150px;
+  height: 150px;
+}
 .container .wrapper__aside {
   grid-area: aside;
   border: 1px solid red;

@@ -31,6 +31,16 @@
     &__main {
       grid-area: main;
       border: 1px solid purple;
+
+      &--section {
+        background-color: lightcoral;
+        &--card {
+          &--img {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
     }
 
     &__aside {
