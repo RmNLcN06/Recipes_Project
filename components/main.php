@@ -5,10 +5,11 @@
         foreach ($recipes as $recipe) {
             if (array_key_exists('is_enabled', $recipe) && $recipe['is_enabled'] == true) { ?>
                 <div class="wrapper__main--section--card">
-                    <img src="" alt="" class="wrapper__main--section--card--img">
+                    <img src="<?php echo $recipe['image']; ?>" alt="" class="wrapper__main--section--card--img">
                     <h2 class="wrapper__main--section--card--name"><?php echo $recipe['title']; ?></h2>
+                    <p class="wrapper__main--section--card--category"><?php echo $recipe['category']; ?></p>
                     <p class="wrapper__main--section--card--description"><?php echo $recipe['recipe']; ?></p>
-                    <p class="wrapper__main--section--card--author">de <?php echo $recipe['author']; ?></p>
+                    <p class="wrapper__main--section--card--author">de <?php echo $recipe['author']; ?> (<?php echo $recipe['mail']; ?>)</p>
                     <p class="wrapper__main--section--card--date">le <?php echo $recipe['date']; ?></p>
                 </div>
         <?php };
