@@ -11,7 +11,7 @@ $recipes = [
         'is_enabled' => true,
     ],
     [
-        'image' => './images/img-01.jpg',
+        'image' => './images/img-02.jpg',
         'title' => 'Pizza Marguerite',
         'category' => 'Plat',
         'recipe' => 'Première Etape : mélanger la sauce tomate avec un mélange d\'origan et d\'huile d\'olive',
@@ -21,7 +21,7 @@ $recipes = [
         'is_enabled' => true,
     ],
     [
-        'image' => './images/img-01.jpg',
+        'image' => './images/img-03.jpg',
         'title' => 'Cookies aux pépites de chocolats',
         'category' => 'Dessert',
         'recipe' => 'Première Etape : concasser le chocolat en petits morceaux',
@@ -31,7 +31,7 @@ $recipes = [
         'is_enabled' => true,
     ],
     [
-        'image' => './images/img-01.jpg',
+        'image' => './images/img-04.jpg',
         'title' => 'Tarte aux pommes',
         'category' => 'Dessert',
         'recipe' => 'Première Etape : couper en fines tranches les pommes',
@@ -41,7 +41,7 @@ $recipes = [
         'is_enabled' => true,
     ],
     [
-        'image' => './images/img-01.jpg',
+        'image' => './images/img-05.jpg',
         'title' => 'Tarte aux poires',
         'category' => 'Dessert',
         'recipe' => 'Première Etape : couper en morceaux les poires',
