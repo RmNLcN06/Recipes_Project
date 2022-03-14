@@ -10,11 +10,17 @@
 
                 <div class="wrapper__main--section--container--card">
                     <img src="<?php echo $recipe['image']; ?>" alt="" class="wrapper__main--section--container--card--img">
-                    <h2 class="wrapper__main--section--container--card--name"><?php echo $recipe['title']; ?></h2>
-                    <p class="wrapper__main--section--container--card--category"><?php echo $recipe['category']; ?></p>
-                    <p class="wrapper__main--section--container--card--description"><?php echo $recipe['recipe']; ?></p>
-                    <p class="wrapper__main--section--container--card--author">de <?php echo displayAuthor($recipe['mail'], $users); ?></p>
-                    <p class="wrapper__main--section--container--card--date">le <?php echo $recipe['date']; ?></p>
+                    <div class="wrapper__main--section--container--card--description">
+                        <h2 class="wrapper__main--section--container--card--description--name"><?php echo $recipe['title']; ?></h2>
+                        <p class="wrapper__main--section--container--card--description--category"><?php echo $recipe['category']; ?></p>
+                        <!-- <p class="wrapper__main--section--container--card--description"><?php echo $recipe['recipe']; ?></p> -->
+                        <div class="wrapper__main--section--container--card--description--footer">
+                            <p class="wrapper__main--section--container--card--description--footer--author">de <?php echo displayAuthor($recipe['mail'], $users); ?></p>
+                            <p class="wrapper__main--section--container--card--description--footer--date">le <?php echo $recipe['date']; ?></p>
+                        </div>
+                    </div>
+
+
                 </div>
             <?php };
             // }; 

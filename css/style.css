@@ -42,11 +42,44 @@
 }
 .container .wrapper__main--section--container--card {
   border: 1px solid blue;
+  color: black;
   width: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
 }
 .container .wrapper__main--section--container--card--img {
   width: 100%;
   height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .wrapper__main--section--container--card--description {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  top: -10%;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+.container .wrapper__main--section--container--card--name {
+  letter-spacing: 1.5px;
+}
+.container .wrapper__main--section--container--card--footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 4px;
+}
+.container .wrapper__main--section--container--card--footer--author {
+  font-size: 14px;
+}
+.container .wrapper__main--section--container--card--footer--date {
+  font-size: 12px;
+  font-style: italic;
 }
 .container .wrapper__aside {
   grid-area: aside;

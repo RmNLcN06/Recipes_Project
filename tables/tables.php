@@ -40,7 +40,7 @@ $recipes = [
     ],
     [
         'image' => './images/img-03.jpg',
-        'title' => 'Cookies aux pépites de chocolats',
+        'title' => 'Cookies',
         'category' => 'Dessert',
         'recipe' => 'Première Etape : concasser le chocolat en petits morceaux',
         'mail' => 'romain.lucan@exemple.com',
@@ -62,7 +62,7 @@ $recipes = [
         'category' => 'Dessert',
         'recipe' => 'Première Etape : couper en morceaux les poires',
         'mail' => 'bruno.duperrier@exemple.com',
-        'date' => '10/03/2022',
+        'date' => date("d/m/Y"),
         'is_enabled' => true,
     ],
 ];

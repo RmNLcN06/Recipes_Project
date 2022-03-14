@@ -1,7 +1,7 @@
 <?php
 
-include './tables/tables.php';
-include './variables/variables.php';
+include_once './tables/tables.php';
+include_once './variables/variables.php';
 
 ?>
 
@@ -22,11 +22,11 @@ include './variables/variables.php';
     <div class="container">
         <div class="wrapper">
             <?php
-            include './components/header.php';
-            include './components/nav.php';
-            include './components/main.php';
-            include './components/aside.php';
-            include './components/footer.php';
+            include_once './components/header.php';
+            include_once './components/nav.php';
+            include_once './components/main.php';
+            include_once './components/aside.php';
+            include_once './components/footer.php';
             ?>
         </div>
     </div>
