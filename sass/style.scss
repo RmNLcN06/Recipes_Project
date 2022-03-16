@@ -59,38 +59,42 @@
 
             &--img {
               width: 100%;
-              height: 250px;
+              height: 200px;
               border-top-left-radius: 10px;
               border-top-right-radius: 10px;
             }
 
             &--description {
-              border-top-left-radius: 10px;
-              border-top-right-radius: 10px;
-              position: relative;
-              top: -10%;
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
               width: 100%;
-              height: 100px;
               background-color: white;
-            }
-
-            &--name {
-              letter-spacing: 1.5px;
-            }
-
-            &--footer {
-              width: 100%;
               display: flex;
+              flex-direction: column;
               justify-content: space-between;
-              padding: 0px 4px;
+              align-items: center;
+              padding-top: 20px;
+              height: 120px;
 
-              &--author {
-                font-size: 14px;
+              &--name {
+                letter-spacing: 1px;
               }
 
-              &--date {
-                font-size: 12px;
-                font-style: italic;
+              &--footer {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 4px;
+                margin-top: 15px;
+
+                &--author {
+                  font-size: 14px;
+                }
+
+                &--date {
+                  font-size: 12px;
+                  font-style: italic;
+                }
               }
             }
           }

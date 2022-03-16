@@ -1,7 +1,40 @@
 <?php
 
-include_once './tables/tables.php';
-include_once './variables/variables.php';
+include './tables/tables.php';
+include './variables/variables.php';
+
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+} else {
+    $page = '';
+}
+
+switch ($page) {
+    case 'accueil':
+        $pagepath = 'pages/c31648.php';
+        break;
+    case 'idées_recettes':
+        $pagepath = 'pages/c26479.php';
+        break;
+    case 'aides_cuisines':
+        $pagepath = 'pages/c43941.php';
+        break;
+    case 'communauté':
+        $pagepath = 'pages/c84627.php';
+        break;
+    case 'contact':
+        $pagepath = 'pages/c14056.php';
+        break;
+    case 'connexion':
+        $pagepath = 'pages/c49753.php';
+        break;
+    default:
+        $pagepath = 'pages/c31648.php';
+}
+
+if (!file_exists($pagepath)) {
+    $pagepath = 'pages/c31648.php';
+}
 
 ?>
 
@@ -21,13 +54,32 @@ include_once './variables/variables.php';
 <body>
     <div class="container">
         <div class="wrapper">
-            <?php
-            include_once './components/header.php';
-            include_once './components/nav.php';
-            include_once './components/main.php';
-            include_once './components/aside.php';
-            include_once './components/footer.php';
-            ?>
+            <header class="wrapper__header">
+                <?php
+                include('./inc/_header.php');
+                ?>
+            </header>
+            <nav class="wrapper__nav">
+                <?php
+                include('./inc/_nav.php');
+                ?>
+            </nav>
+            <main class="wrapper__main">
+                <?php
+                // include('./inc/_main.php');
+                include($pagepath);
+                ?>
+            </main>
+            <aside class="wrapper__aside">
+                <?php
+                include('./inc/_aside.php');
+                ?>
+            </aside>
+            <footer class="wrapper__footer">
+                <?php
+                include('./inc/_footer.php');
+                ?>
+            </footer>
         </div>
     </div>
 </body>
